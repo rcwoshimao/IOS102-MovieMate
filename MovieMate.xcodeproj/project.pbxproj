@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1067B85F29B5A21800AECF66 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067B85E29B5A21800AECF66 /* MoviesViewController.swift */; };
+		1067B86229B5A95100AECF66 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 1067B86129B5A95100AECF66 /* Nuke */; };
+		107B545829B6B4EC002C981B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107B545729B6B4EC002C981B /* DetailViewController.swift */; };
 		10D7D55229AF36C600714393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7D55129AF36C600714393 /* AppDelegate.swift */; };
 		10D7D55429AF36C600714393 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7D55329AF36C600714393 /* SceneDelegate.swift */; };
 		10D7D55629AF36C600714393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7D55529AF36C600714393 /* ViewController.swift */; };
 		10D7D55929AF36C600714393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D7D55729AF36C600714393 /* Main.storyboard */; };
 		10D7D55B29AF36C600714393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D7D55A29AF36C600714393 /* Assets.xcassets */; };
 		10D7D55E29AF36C600714393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D7D55C29AF36C600714393 /* LaunchScreen.storyboard */; };
+		10D7D56629AF390800714393 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7D56529AF390800714393 /* Movie.swift */; };
+		10D7D56929B1BC7300714393 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D7D56829B1BC7300714393 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1067B85E29B5A21800AECF66 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		107B545729B6B4EC002C981B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		10D7D54E29AF36C600714393 /* MovieMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D7D55129AF36C600714393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10D7D55329AF36C600714393 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		10D7D55A29AF36C600714393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D7D55D29AF36C600714393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D7D55F29AF36C600714393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D7D56529AF390800714393 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		10D7D56829B1BC7300714393 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1067B86229B5A95100AECF66 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,27 @@
 		10D7D55029AF36C600714393 /* MovieMate */ = {
 			isa = PBXGroup;
 			children = (
+				10D7D56729B1AD8900714393 /* New Group */,
+				10D7D55529AF36C600714393 /* ViewController.swift */,
+				1067B85E29B5A21800AECF66 /* MoviesViewController.swift */,
+				10D7D56829B1BC7300714393 /* MovieCell.swift */,
 				10D7D55129AF36C600714393 /* AppDelegate.swift */,
 				10D7D55329AF36C600714393 /* SceneDelegate.swift */,
-				10D7D55529AF36C600714393 /* ViewController.swift */,
 				10D7D55729AF36C600714393 /* Main.storyboard */,
+				107B545729B6B4EC002C981B /* DetailViewController.swift */,
 				10D7D55A29AF36C600714393 /* Assets.xcassets */,
 				10D7D55C29AF36C600714393 /* LaunchScreen.storyboard */,
 				10D7D55F29AF36C600714393 /* Info.plist */,
 			);
 			path = MovieMate;
+			sourceTree = "<group>";
+		};
+		10D7D56729B1AD8900714393 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				10D7D56529AF390800714393 /* Movie.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = MovieMate;
+			packageProductDependencies = (
+				1067B86129B5A95100AECF66 /* Nuke */,
+			);
 			productName = MovieMate;
 			productReference = 10D7D54E29AF36C600714393 /* MovieMate.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 10D7D54529AF36C600714393;
+			packageReferences = (
+				1067B86029B5A95100AECF66 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 10D7D54F29AF36C600714393 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +168,11 @@
 			files = (
 				10D7D55629AF36C600714393 /* ViewController.swift in Sources */,
 				10D7D55229AF36C600714393 /* AppDelegate.swift in Sources */,
+				10D7D56629AF390800714393 /* Movie.swift in Sources */,
+				10D7D56929B1BC7300714393 /* MovieCell.swift in Sources */,
 				10D7D55429AF36C600714393 /* SceneDelegate.swift in Sources */,
+				1067B85F29B5A21800AECF66 /* MoviesViewController.swift in Sources */,
+				107B545829B6B4EC002C981B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=*]" = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -358,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1067B86029B5A95100AECF66 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1067B86129B5A95100AECF66 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1067B86029B5A95100AECF66 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 10D7D54629AF36C600714393 /* Project object */;
 }
